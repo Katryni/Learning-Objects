@@ -1,0 +1,70 @@
+<?php
+session_stars();
+?>
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset = "UTF-8"/>
+	<title>Funções</title>
+	<link rel = "stylesheet" type = "text/css" href = "css/conteudo.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "css/porcentagem.css"/>
+	<link rel="sortcut icon" href="favicon_M.ico" type="image/x-icon" />
+</head>
+<body>
+	<nav id = "cabecalho">
+		<ul class = "menu">
+			<li><a href = "home.html">INÍCIO</a></li>
+			<li><a>CATEGORIA</a>
+				<ul>
+					<li><a href = "mat1.html">MATEMÁTICA I</a></li>
+					<li><a href = "mat2.html">MATEMÁTICA II</a></li>
+				</ul>
+			</li>
+			<li><a href = "sobre.html">SOBRE</a></li>
+		</ul>
+		<a href = "login.html"><img id = "user" src  = "img/user.png" /></a>
+	</nav>
+<div id = "interface">
+<article id = "conteudo">
+<p class = "barra-navegacao">> <a href ="home.html">Inicío </a>> <a href = "mat1.html">Matemática I </a>> Álgebra I > Você está aqui:<a href = "funcoes.html"> Funções</a></p>
+	<h1>FUNÇÃO</h1>
+	<h3> O QUE É UMA FUNÇÃO?</h3>
+		<p>Em diversas situações do dia a dia é possível perceber grandezas que, de certa maneira, estão relacionadas. Muitas dessas relações podem ser descritas por um conceito matemático denominado função.</p>
+		<p>Acredita- se que o termo função tenha sido introduzido na matemática por Gottfried Wilhelm Leibniz (1646 - 1716), mas a noção que temos atualmente de função só foi introduzida posteriormente por Leonhard Euler (1707 - 1783).</p>
+		<p>Considere os conjuntos A={0,1,4} e B={-1,0,2,5} e as seguintes relações de A em B:</p></br>
+		<div class="row">
+			<div class="coluna">
+				<figcaption>● R1= {(x,y)∈AXB|y=x+1}</figcaption>
+				<img id="fun" src="img/funcao1.jpg" alt="● R1= {(x,y)∈AXB|y=x+1}" style="width:70%">
+			</div>
+		<div class="coluna">
+			<figcaption>●R2= {(x,y)∈AXB|y=2x}</figcaption>
+			<img id="fun" src="img/funcao2.jpg" alt="●R2= {(x,y)∈AXB|y=2x}" style="width:70%">
+		</div>
+		<div class="coluna">
+			<figcaption>●R2= {(x,y)∈AXB|y²=x}</figcaption>
+			<img id="fun" src="img/funcao3.jpg" alt="●R2= {(x,y)∈AXB|y²=x}" style="width:70%">
+		</div>
+		</div>
+		<p><br><p>● R1 é a função, pois cada elemento de A corresponde a um único elemento de B</p></p>
+		<p>● R2 não é função, pois existe elemento de A que não tem correspondente em B.</p>
+		<p>● R3 não é função, pois existe elemento de A que tem dois correspondentes em B.</p>
+		<p><b>Sejam os conjuntos A e B não vazios, uma relação f de A em B é uma função quando associada a um elemento x, do conjunto A, um único elemento y, de B.</b> </p>
+	<h3> GRÁFICO DE UMA FUNÇÃO</h3>	
+		<p>Em geral, os gráficos são utilizados para facilitar a exposição e compreensão de informações, sendo que muitos deles representam funções. Eles são criados no plano cartesiano que é estabelecido pelo encontro dos eixos cartesianos x e y, conhecidos como eixo das abcissas e eixo das ordenadas, respectivamente.</p>
+		<p>Cada ponto do gráfico é conhecido como par ordenado, pois ele é formado pelo encontro de um valor das abcissas com um valor das ordenadas. A linha que une os pares ordenados é conhecida como curva da função.</p>
+		<img id = "p" src="img/plano-cartesiano.jpg" align="center"/>
+		<p>Vejamos por exemplo as seguintes funções:</p>
+		<img id = "p" src="img/f(x)=2x-3.jpg" align="center"/>
+		<p>● A função f(x)=2x-3 é crescente em todo o domínio. 
+									Neste caso, dizemos que f é uma função crescente.<p>
+		<img id = "p" src="img/g(x)=-x+2.jpg" align="center"/>
+		<p>● A função g(x)=-x+2  é decrescente em todo o domínio. 
+									Neste caso, dizemos que f é uma função decrescente.<p>
+</article>
+</div>
+<footer id = "rodape">
+	<p>Ⓒ2021 TCC PROJECT | <a href = "https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:4aa1fd7b-93c8-4c96-833f-a13bca7ba5be" target = "_blank">TERMOS DE USO</a></p>
+</footer>
+</body>
+</html>

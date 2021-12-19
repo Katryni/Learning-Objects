@@ -1,0 +1,93 @@
+<?php
+
+?>
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset = "UTF-8"/>
+	<title>Login</title>
+	<link rel = "stylesheet" type = "text/css" href = "css/estilo.css"/>
+	<link rel="sortcut icon" href="favicon_M.ico" type="image/x-icon" />
+	<style>
+		form{
+			padding-top:50px;
+			width: 150px;
+			height:auto;
+			margin-left: 270px;
+		}
+		input, textarea{
+			font-family: arial, helvetica, sans-serif;
+			font-weight: normal;
+			font-size: 13pt;
+		}
+		textarea :hover{
+			color: rgb(234, 234, 225);
+		}
+		input :hover {
+			color: rgb(234, 234, 225);
+			
+		}
+		legend {
+			font-family:'Eczar', serif;
+			color: #0F0D60;
+			size: 12pt;
+		}
+		fieldset#usuario {
+			background-color: rgb(242, 235, 216);
+		}
+		label {
+			font-family: arial, helvetica, sans-serif;
+			font-size: 10pt;
+		}
+		p#l {
+			text-align: justify;
+			font-family: arial, sans-serif;
+			line-height: 10px;
+		}
+		p#side {
+			margin-right: 115px;
+			text-align: justify;
+			font-family: arial, sans-serif;
+			padding-bottom: 250px;
+			line-height: 20px;
+		}
+		footer#rodape p {
+			text-align: left;
+			font-size: 12px;
+			font-family: arial, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<nav id = "cabecalho">
+		<ul class = "menu">
+			<li><a href = "home.html">INÍCIO</a></li>
+			<li><a>CATEGORIA</a>
+				<ul>
+					<li><a href = "mat1.html">MATEMÁTICA I</a></li>
+					<li><a href = "mat2.html">MATEMÁTICA II</a></li>
+				</ul>
+			</li>
+			<li><a href = "sobre.html">SOBRE</a></li>
+		</ul>
+		<a href = "login.php"><img id = "user" src  = "img/user.png" /></a>
+	</nav>
+<div id = "interface">
+	<form method = "POST" action = "login.php">
+		<legend>Tela de Login</legend>
+		<fieldset id = "usuario"> 
+			<p><label for = "C-login">Login:</label><input type = "text" name = "login" id = "IDlogin" size = "20" maxlength = "30" placeholder = "Código de Login"/></p>
+			<p><label for = "c-senha">Senha:</label><input type = "password" name = "senha" id = "IDsenha" placeholder ="Senha"/></p>
+			<input type = "submit" value = "Entrar" id = "entrar" name = "entrar"/>
+		</fieldset>
+	</form>
+	<section id = "corpo">
+		<p id = "l">Você é administrador mas ainda não possui cadastro?</p>
+		<p id = "side">Então <a href = "contato.html">clique aqui</a> e entre em contato com o Administrador Padrão para a realização do cadastro.</p>
+	</section>
+</div>
+<footer id = "rodape">
+	<p>Ⓒ2021 TCC PROJECT | <a href = "https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:4aa1fd7b-93c8-4c96-833f-a13bca7ba5be" target = "_blank">TERMOS DE USO</a></p>
+</footer>
+</body>
+</html>

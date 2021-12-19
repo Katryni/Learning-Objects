@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset = "UTF-8"/>
+	<title>Cadastro</title>
+	<link rel = "stylesheet" type = "text/css" href = "css/estilo.css"/>
+	<link rel="sortcut icon" href="favicon_M.ico" type="image/x-icon" />
+	<script>
+		function isNumber(evt) {
+		evt = (evt) ? evt : window.event;
+		var charCode = (evt.which) ? evt.which : evt.keyCode;
+		if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+			return false;
+		}
+		return true;
+		}
+	</script>
+	<style>
+		form{
+			padding-top:50px;
+			width: 150px;
+			height:auto;
+			margin-left: 270px;
+		}
+		input, textarea{
+			font-family: arial, helvetica, sans-serif;
+			font-weight: normal;
+			font-size: 13pt;
+		}
+		textarea:hover{
+			color: rgb(234, 234, 225);
+		}
+		input:hover {
+			color: rgb(234, 234, 225);
+			
+		}
+		legend {
+			font-family:'Eczar', serif;
+			color: #0F0D60;
+			size: 12pt;
+		}
+		fieldset#usuario {
+			background-color: rgb(242, 235, 216);
+		}
+		label {
+			font-family: arial, helvetica, sans-serif;
+			font-size: 10pt;
+		}
+		footer#rodape p {
+			text-align: left;
+			font-size: 12px;
+			font-family: arial, sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<nav id = "cabecalho">
+		<ul class = "menu">
+			<li><a href = "home.html">INÍCIO</a></li>
+			<li><a>CATEGORIA</a>
+				<ul>
+					<li><a href = "mat1.html">MATEMÁTICA I</a></li>
+					<li><a href = "mat2.html">MATEMÁTICA II</a></li>
+				</ul>
+			</li>
+			<li><a href = "sobre.html">SOBRE</a></li>
+		</ul>
+		<a href = "login.html"><img id = "user" src  = "img/user.png" /></a>
+	</nav>
+<div id = "interface">
+	<form method = "post" id = "fCont" action = "cadastro.php">
+		<legend>Formulário de Cadastro</legend>
+		<fieldset id = "usuario"> 
+			<p><label>Nome:</br></label><input type = "text" name = "nome" id = "nome" size = "20" maxlength = "40" placeholder = "Nome Completo"/></p>
+			<p><label>Celular:</br></label><input type= "text" name = "celular" id = "celular" size = "20" maxlength = "11" onkeypress="return isNumber(event)"/></p>
+			<p><label for = "login">Código de Login:</label><input type = "text" name = "login"  id = "login" size = "20" maxlength = "20"/></p>
+			<p><label>Senha:</br></label><input type = "password" name = "senha" id = "senha" placeholder ="Senha" maxlength = "15"/></p>
+			<p><label>Confirme sua senha:</label><input type = "password" name = "senha1" id = "senha1" placeholder ="Senha" maxlength = "15"/></p>
+			<input type = "submit" value = "Cadastrar" id = "cadastro"/>
+		</fieldset>
+	</form>
+	</br>
+	<a href = "painel.php" style = "margin-left:20px; font-size: 12px; font-family: arial, sans-serif;">VOLTAR AO PAINEL DE CONTROLE</a>
+</div>
+<footer id = "rodape">
+	<p>Ⓒ2021 TCC PROJECT | <a href = "https://documentcloud.adobe.com/link/review?uri=urn:aaid:scds:US:4aa1fd7b-93c8-4c96-833f-a13bca7ba5be" target = "_blank">TERMOS DE USO</a></p>
+</footer>
+</body>
+</html>

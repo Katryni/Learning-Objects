@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF=8"/>
+	<link rel = "stylesheet" type = "text/css" href = "css/formulario.css"/>
+	<style>
+		body {
+			background-color:rgb(242, 235, 216);
+		}
+		ul#secao  {
+			text-decoration: none;
+			list-style: none;
+			font-size:20px;
+			font-family: arial, helvetica, sans-serif;
+		}
+		li {
+			padiing: 2px;
+		}
+		ul#secao li a{
+			text-decoration:none;
+			display: block;
+		}
+		label {
+			font-family:arial, helvetica, sans-serif;
+			font-size:12pt;
+			color:#0F0D60;
+		}
+		div#painel {
+			margin-top: 0px;
+			padding-top: 0px;
+			float: center;
+		}
+	</style>
+</head>
+<body>
+<div id = "painel">
+	<form action = "publicar.php" method = "POST" enctype = "multipart/form-data" class = "publicar" charset = "UTF-8">
+		<label for = "nome"><legend>Dê um título à sua publicação:</legend></label>
+		<input type = "text" name = "descricao" id = "descricao" placeholder = "Título do Conteúdo" class = "form form-control" size = "34"/></br></br>
+		<label for = "data"><legend>Qual é a data de hoje?</legend></label><input type = "date" name = "data" id = "data" class = "form form-control"/></br></br>
+		<label for = "postador"><legend>Quem está publicando?</br>(Por exemplo, se você for o Administrador 1 então insira o número 1)</legend></label><input type = "number" name = "postador" id = "postador" class = "form form-control" size = "34"/></br>
+		<p><label for = "secao"><legend>Informe a Seção correspondente ao conteúdo:</legend></label><select name = "secao" id = "secao">
+		<optgroup label = "Matemática I">
+			<option value = "1">Aritmética</option>
+			<option value = "2">Álgebra I</option>
+			<option value = "3">Geometria I</option>
+			<option value = "4">Grandezas e Medidas</option>
+		</optgroup>
+		<optgroup label = "Matemática II">
+			<option value = "5">Álgebra II</option>
+			<option value = "6">Geometria II</option>
+			<option value = "7">Probalidade e Estatística</option>
+		</optgroup>
+		</select></p>
+		</br>
+		<legend>Escolha os tipos que podem aparecer no conteúdo postado:</legend><input type = "radio" name = "tipo" id = "tipo" class = "form form-control" value = "1"/><label for = "tipo">Vídeo</label>
+		<input type = "radio" name = "tipo" id = "tipo" class = "form form-control" value = "2"/><label for = "tipo">Imagem</label>
+		<input type = "radio" name = "tipo" id = "tipo" class = "form form-control" value = "3"/><label for = "tipo">Animação</label>
+		<input type = "radio" name = "tipo" id = "tipo" class = "form form-control" value = "4"/><label for = "tipo">Texto</label></br></br>
+		<label for = "ar"><legend>Quer anexar uma imagem?</legend></label><input type = "file" required name = "arquivo" id = "arquivo"/></br></br>
+		<label for = "fonte"><legend>Se algum dos elementos tiver sido tirado de outro lugar (for de autoria de outra pessoa que não sua), insira a fonte:</legend></label><input type = "text"  name = "fonte" size = "34"/></br></br>
+		<label for = "video"><legend>Caso queira anexar um vídeo do YouTube coloque a URL:</legend></label><input type = "url"  name = "video" size = "34"/></br></br>
+		<label for = "cont"><legend>Escreva sobre o conteúdo:</legend></label><textarea name = "cont" id = "cont" placeholder = "Insira aqui a parte discursiva do conteúdo . ." class = "cont" cols = "36" rows = "4"></textarea></br></br>	
+		<p><input type = "submit" name = "Publicar" id = "Publicar" VALUE = "Publicar"/>	<input type="reset" name="BTApaga" value="Apagar"></p>
+		</form>
+</div>
+</body>
+</html>
